@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --hero-gradient: linear-gradient(135deg, #FF8FA3 0%, #4ECDC4 50%, #4A90E2 100%);
+  --card-accent-gradient: linear-gradient(135deg, #FFB6C1 0%, #87CEEB 100%);
+  --button-gradient: linear-gradient(135deg, #4A90E2 0%, #64A3F5 100%);
+  --background-gradient: linear-gradient(180deg, #F8FBFF 0%, #EDF4FF 100%);
+}
+
+html {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: var(--background-gradient);
+  min-height: 100vh;
+  color: #2C3E50;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.7s ease;
+}
